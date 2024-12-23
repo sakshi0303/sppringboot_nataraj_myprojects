@@ -1,0 +1,14 @@
+package com.nt.factory;
+
+public class BikeFactory {
+	
+	public static getbike(String type) {
+		if(type.equalsIgnoreCase("standard")) {
+			return new Standard();
+		}else {
+			throw new IllegalException("bike illegal argument");
+		}
+		
+	}
+
+}

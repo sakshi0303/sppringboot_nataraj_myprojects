@@ -1,0 +1,4 @@
+#base file by default en-US locale locale l=new Local("en","US")
+Welcome.msg=
+Goodbye.msg=
+FestivalWishes.msg=

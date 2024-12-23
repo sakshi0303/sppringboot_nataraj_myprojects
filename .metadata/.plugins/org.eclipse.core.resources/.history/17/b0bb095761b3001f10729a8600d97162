@@ -1,0 +1,38 @@
+package com.nt.springbeans;
+// TARGET CLASS
+import java.time.LocalDateTime;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
+import org.springframework.stereotype.Component;
+
+@Component("wmg")
+@Lazy(true)
+public class WishMessenger {
+	public WishMessenger() {
+		System.out.println("AppConfig class");
+	}
+	
+	@Autowired
+	private LocalDateTime gettime;
+	
+	public void setWishMessenger(LocalDateTime gettime) {
+		this.gettime=gettime;
+	}
+	
+	public String showMessage(String user) {
+		int hours =gettime.getHour();
+		if (hours<10) {
+			return "gm"+user;
+		}else if(hours<16){
+			return "good afternoon"+user;
+		}else if(hours<20) {
+			return "good evening"+user;
+		}else{
+			return "gn"+user;
+			}
+	}
+	
+	
+
+}

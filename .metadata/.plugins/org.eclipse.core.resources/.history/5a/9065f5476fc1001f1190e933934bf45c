@@ -1,0 +1,22 @@
+package com.nt.sbean;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component("student")
+public final class Student {
+	
+	@Autowired
+	private IMaterial material;
+	
+	//bmethod
+	public void prepare() {
+		String Exam =material.examschedule();
+		String sd=material.professionDetails();
+		String s23d=material.Sylabus();
+		
+	}
+	
+	
+
+}

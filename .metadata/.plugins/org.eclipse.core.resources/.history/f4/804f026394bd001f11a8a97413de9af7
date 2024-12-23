@@ -1,0 +1,24 @@
+package com.nt.main;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.core.env.ConfigurableEnvironment;
+
+import com.nt.config.AppConfig;
+import com.nt.sbean.Pinfo;
+
+/**
+ * Hello world!
+ */
+public class DPTest {
+    public static void main(String[] args) {
+    	AnnotationConfigApplicationContext ctx=new AnnotationConfigApplicationContext(AppConfig.class);
+    	Pinfo msg=ctx.getBean("pinfo",Pinfo.class);
+    	System.out.println(msg);
+    	
+    	// environement built in obj
+    	ConfigurableEnvironment env =ctx.getEnvironment();
+    	System.out.println(env.getProperty("os.name"));
+    	
+    	ctx.close();
+    }
+}

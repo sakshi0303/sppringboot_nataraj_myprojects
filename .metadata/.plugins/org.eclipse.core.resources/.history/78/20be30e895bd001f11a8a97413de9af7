@@ -1,0 +1,19 @@
+package com.nt.sbean;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.ConfigurableEnvironment;
+import org.springframework.stereotype.Component;
+
+@Component("p1infoenvi")
+public class P1InfoEnvironemnt {
+	
+	@Autowired
+	private ConfigurableEnvironment env1;
+	
+	private String name=env1.getProperty("${per.name}") ;
+	System.out.println(name.toString());
+	
+	
+
+	
+}

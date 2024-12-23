@@ -1,0 +1,27 @@
+package com.nt.sbean;
+
+import java.util.Date;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Vehicle {
+	
+	@Autowired
+	private IEngine engine;
+	
+	public void jorney(Date start,Date stop) {
+		
+		System.out.println("jusrney started"+start);
+		
+		System.out.println("jusrney going on");
+		
+		System.out.println("jusrney stopped"+stop);
+		
+		
+		
+	}
+	
+
+}

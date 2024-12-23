@@ -1,0 +1,16 @@
+package com.nt.sbean;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.ConfigurableEnvironment;
+
+public class P1InfoEnvironemnt {
+	
+	@Autowired
+	private ConfigurableEnvironment env1;
+	
+	private String name ;
+	
+	
+
+	
+}

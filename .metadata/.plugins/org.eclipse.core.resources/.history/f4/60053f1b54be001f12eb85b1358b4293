@@ -1,0 +1,4 @@
+#base file by default en-US locale locale l=new Local("en","US")
+Welcome.msg=शुभ प्रभात
+Goodbye.msg=सभी को अलविदा
+FestivalWishes.msg=नए साल की शुभकामनाएँ

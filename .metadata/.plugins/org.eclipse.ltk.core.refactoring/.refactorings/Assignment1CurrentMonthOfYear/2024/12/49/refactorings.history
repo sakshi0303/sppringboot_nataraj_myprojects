@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.nt.beans&apos; to &apos;com.nt.Sbeans&apos;&#x0A;- Original project: &apos;Assignment1CurrentMonthOfYear&apos;&#x0A;- Original element: &apos;Assignment1CurrentMonthOfYear/src/com.nt.beans&apos;&#x0A;- Renamed element: &apos;Assignment1CurrentMonthOfYear/src/com.nt.Sbeans&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.nt.beans&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.nt.beans" name="com.nt.Sbeans" qualified="false" references="true" stamp="1733423306721" textual="false" version="1.0"/>
+</session>

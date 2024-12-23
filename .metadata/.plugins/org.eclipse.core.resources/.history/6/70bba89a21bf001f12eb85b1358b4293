@@ -1,0 +1,27 @@
+package com.nt.sbean;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component("fkpt")
+public class Flipkart {
+	
+	@Autowired
+	// @Qualifier("${courier.id}") error we have to @Value
+	//@Qualifier( @Value("${courier.id}"))
+	
+	@Value("${courier.id}")
+	private String id ;
+	
+	@Qualifier(id);//Syntax error, insert "EnumBody" to complete EnumDeclaration
+	private Courier courier;
+	
+	public String shopping() {
+		String msg=courier.delivery();
+		
+		return "flipkart shopping method from "+msg;
+	}
+
+}

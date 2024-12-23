@@ -1,0 +1,20 @@
+package com.nt.sbean;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component("fkpt")
+public class Flipkart {
+	
+	@Autowired
+	@Qualifier("bluedart")
+	private Courier courier;
+	
+	public String shopping() {
+		String msg=courier.delivery();
+		
+		return "flipkart shopping method from "+msg;
+	}
+
+}

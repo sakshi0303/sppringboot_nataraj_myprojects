@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.IOCProject01_prototypeScope&apos; to &apos;com.nt.client&apos;&#x0A;- Original project: &apos;IOCProject07-prototypeScope&apos;&#x0A;- Original element: &apos;IOCProject07-prototypeScope/src/main/java/com.IOCProject01_prototypeScope&apos;&#x0A;- Renamed element: &apos;IOCProject07-prototypeScope/src/main/java/com.nt.client&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.IOCProject01_prototypeScope&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.IOCProject01_prototypeScope" name="com.nt.client" qualified="false" references="true" stamp="1734285534298" textual="false" version="1.0"/>
+</session>

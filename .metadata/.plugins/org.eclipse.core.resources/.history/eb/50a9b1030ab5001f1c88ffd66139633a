@@ -1,0 +1,19 @@
+package com.nt.bike;
+
+public class Standard implements bike {
+
+	@Override
+	public void drive1() {
+		// TODO Auto-generated method stub
+		System.out.print("drive1 standard");
+
+	}
+
+	@Override
+	public void park1() {
+		// TODO Auto-generated method stub
+		System.out.print("park1  standard");
+
+	}
+
+}

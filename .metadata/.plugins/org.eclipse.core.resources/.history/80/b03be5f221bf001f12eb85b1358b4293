@@ -1,0 +1,27 @@
+package com.nt.sbean;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component("fkpt")
+public class Flipkart {
+	
+	@Autowired
+	// @Qualifier("${courier.id}") error we have to user @Value from property file
+	//@Qualifier( @Value("${courier.id}")) no nested annotation
+	
+	@Value("${courier.id}")
+	private String id ;
+	
+	@Qualifier(id);//The value for annotation attribute Qualifier.value must be a constant expression
+	private Courier courier;
+	
+	public String shopping() {
+		String msg=courier.delivery();
+		
+		return "flipkart shopping method from "+msg;
+	}
+
+}

@@ -1,0 +1,17 @@
+package com.nt.sbean;
+
+public class CNGEngine implements IEngine {
+
+	@Override
+	public String engine_start() {
+		
+		return "CNG engine started";
+	}
+
+	@Override
+	public String engine_stop() {
+		
+		return "CNG engine stopped";
+	}
+
+}

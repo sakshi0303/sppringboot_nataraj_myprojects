@@ -1,0 +1,27 @@
+package com.nt.sbean;
+
+import java.util.Date;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class SeasonFinder {
+	
+	@Autowired
+	private Date dt;
+	
+	//b-method
+	public String SeasonFinder() {
+		
+		@SuppressWarnings("deprecation")
+		int dtm=dt.getMonth();
+		if(dtm<4) {
+			return "Summer Season";
+		}else if(dtm<10){
+			return "Rainy Season";
+		}else {
+			return "Winter Season";
+		}
+	}
+	
+
+}

@@ -1,0 +1,58 @@
+package com.nt.sbean;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component("pinfo")
+public class Pinfo {
+	
+	@Override
+	public String toString() {
+		return "Pinfo [directvalue=" + directvalue + ", id=" + id + ", name=" + name + ", rollno=" + rollno + ", dlno="
+				+ dlno + ", addr=" + addr + ", sal=" + sal + ", osname=" + osname + ", osver=" + osver + ", javahome="
+				+ javahome + ", path=" + path + ", classpath=" + classpath + "]";
+	}
+
+	//direct static value inserted
+	@Value("8000007832")
+	private long directvalue;
+	
+	// values injected from .property file
+	@Value("${per.id}") //12
+	private Integer id;
+	
+	@Value("${per.name}") //"sakshi"
+	private String name;
+	
+	@Value("${per.rollno}") //123456
+	private Integer rollno;
+	
+	@Value("${per.dlno}") //99023
+	private Integer dlno;
+	
+	@Value("${per.addr}") //"m-1234,seattle,wa 98101"
+	private String addr;
+	
+	@Value("${per.sal}") //12.23
+	private Float sal;
+	
+	@Value("${os.name}")
+	private String osname;
+	
+	@Value("${os.ver}")
+	private String osver;
+	
+	@Value("${Java-Home}")
+	private String javahome;
+	
+	@Value("${Path}")
+	private String path;
+	
+	@Value("${ClassPath}")
+	private String classpath;
+	
+	
+	
+	
+
+}

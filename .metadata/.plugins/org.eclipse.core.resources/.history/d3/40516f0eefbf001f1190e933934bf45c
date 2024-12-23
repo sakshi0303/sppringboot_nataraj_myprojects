@@ -1,0 +1,16 @@
+package com.nt;
+// no need of config and client package all can be done here
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
+@SpringBootApplication
+public class SpringBootStarterProject1SpingToolSuiteApplication {
+	
+	
+
+	public static void main(String[] args) {
+		ConfigurableApplicationContext ctx=SpringApplication.run(SpringBootStarterProject1SpingToolSuiteApplication.class, args);
+	}
+
+}

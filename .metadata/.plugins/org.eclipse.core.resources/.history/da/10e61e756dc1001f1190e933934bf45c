@@ -1,0 +1,23 @@
+package com.nt.sbean;
+
+public class JavaCourse implements IMaterial {
+
+	@Override
+	public String examschedule() {
+		// TODO Auto-generated method stub
+		return "java course examschedule ";
+	}
+
+	@Override
+	public String professionDetails() {
+		// TODO Auto-generated method stub
+		return "java course professionDetails";
+	}
+
+	@Override
+	public String Sylabus() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

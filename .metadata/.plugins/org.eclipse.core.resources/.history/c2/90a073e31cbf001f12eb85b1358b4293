@@ -1,0 +1,15 @@
+package com.nt.sbean;
+
+public class BlueDart implements Courier {
+	
+	public BlueDart() {
+		System.out.println("BlueDart zero param constructor");
+	}
+
+	@Override
+	public String delivery() {
+		return "BlueDart delivery";
+	}
+
+	
+}

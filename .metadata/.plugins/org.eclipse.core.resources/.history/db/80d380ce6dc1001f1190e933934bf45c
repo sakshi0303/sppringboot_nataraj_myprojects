@@ -1,0 +1,23 @@
+package com.nt.sbean;
+
+public class DotNetCourse implements IMaterial {
+
+	@Override
+	public String examschedule() {
+		// TODO Auto-generated method stub
+		return "PHP course examschedule ";
+	}
+
+	@Override
+	public String professionDetails() {
+		// TODO Auto-generated method stub
+		return "PHP course professionDetails";
+	}
+
+	@Override
+	public String Sylabus() {
+		// TODO Auto-generated method stub
+		return "PHP course Sylabus";
+	}
+
+}

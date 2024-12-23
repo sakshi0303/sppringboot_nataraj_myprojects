@@ -1,0 +1,17 @@
+package com.nt.sbean;
+
+public class DisealEngine implements IEngine {
+
+	@Override
+	public String engine_start() {
+		// TODO Auto-generated method stub
+		return "Diseal engine started";
+	}
+
+	@Override
+	public String engine_stop() {
+		// TODO Auto-generated method stub
+		return "Diseal engine stopped";
+	}
+
+}

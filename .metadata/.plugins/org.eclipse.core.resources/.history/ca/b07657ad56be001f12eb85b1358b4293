@@ -1,0 +1,4 @@
+#base file by default en-US locale locale l=new Local("en","US")
+Welcome.msg=Good Morning
+Goodbye.msg=Good Bye Everyone
+FestivalWishes.msg=Happy New Year

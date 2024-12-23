@@ -1,0 +1,18 @@
+package com.nt.sbean;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component("fkpt")
+public class Flipkart {
+	
+	@Autowired
+	private Courier courier;
+	
+	public String shopping() {
+		
+		
+		return "flipkart shopping method";
+	}
+
+}

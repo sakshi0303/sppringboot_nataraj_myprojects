@@ -1,0 +1,14 @@
+package com.nt.sbean;
+
+public class DTDC implements Courier{
+	public DTDC() {
+		System.out.println("DTDC zero param constructor");
+	}
+
+	@Override
+	public String delivery() {
+		// TODO Auto-generated method stub
+		return "dtdc delivery";
+	}
+
+}

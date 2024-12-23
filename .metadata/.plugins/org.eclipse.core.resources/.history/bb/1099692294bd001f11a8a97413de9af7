@@ -1,0 +1,13 @@
+package com.nt.sbean;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.ConfigurableEnvironment;
+
+public class P1InfoEnvironemnt {
+	
+	@Autowired
+	private ConfigurableEnvironment env;
+	
+	System.out.println("osnmae:"+env.getProperty("os.name"));
+
+}

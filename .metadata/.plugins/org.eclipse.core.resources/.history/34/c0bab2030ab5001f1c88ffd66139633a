@@ -1,0 +1,6 @@
+package com.nt.bike;
+
+public interface bike {
+	public void drive1();
+	public void park1();
+}

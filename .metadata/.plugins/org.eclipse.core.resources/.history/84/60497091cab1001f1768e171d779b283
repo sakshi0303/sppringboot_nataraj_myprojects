@@ -1,0 +1,27 @@
+package com.nt.main;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.nt.config.AppConfig;
+import com.nt.springbeans.WishMessenger;
+
+public class DependencyInjectionTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		AnnotationConfigApplicationContext ctx=new AnnotationConfigApplicationContext(AppConfig.class);
+		
+		// super class will only access common overridden method NOT DIREVT METHOD
+		// So we need to TypeCasting, 
+		Object obj=ctx.getBean("wmg");
+		WishMessenger fixed=(WishMessenger)obj;
+		System.out.println(fixed.showMessage("Rohan"));
+		
+		//generic (double argument method("beanid","bean.class") dynamic return value changes
+		WishMessenger generator =ctx.getBean("wmg", WishMessenger.class);
+		System.out.println(generator.showMessage("Roy"));
+
+	}
+
+}

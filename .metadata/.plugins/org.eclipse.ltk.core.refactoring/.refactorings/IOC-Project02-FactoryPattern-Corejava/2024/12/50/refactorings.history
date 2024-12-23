@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.nt.bike.bike&apos; to &apos;Bike&apos;&#x0A;- Original project: &apos;IOC-Project02-FactoryPattern-Corejava&apos;&#x0A;- Original element: &apos;com.nt.bike.bike&apos;&#x0A;- Renamed element: &apos;com.nt.bike.Bike&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;bike&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.nt.bike{bike.java[bike" matchStrategy="1" name="Bike" qualified="false" references="true" similarDeclarations="false" stamp="1733621956786" textual="false" version="1.0"/>
+</session>

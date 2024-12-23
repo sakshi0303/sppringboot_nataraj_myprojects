@@ -1,0 +1,34 @@
+package com.nt.sbean;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component("pinfo")
+public class Pinfo {
+	
+	//direct static value inserted
+	@Value("54")
+	private Integer directvalue;
+	
+	// values injected from .property file
+	@Value(${pre.id}) //12
+	private Integer id;
+	
+	@Value(${pre.name}) //"sakshi"
+	private String name;
+	
+	@Value(${pre.rollno}) //123456
+	private Integer rollno;
+	
+	@Value(${pre.dlno}) //99023
+	private Integer dlno;
+	
+	@Value(${pre.addr}) //"m-1234,seattle,wa 98101"
+	private String addr;
+	
+	@Value(${pre.sal}) //12.23
+	private Float sal;
+	
+	
+
+}
