@@ -1,0 +1,55 @@
+spring:
+  profiles:
+    active: staging
+    include: test
+---
+#dev, mysql,apache-dbcp2 basicDatSoruce,
+spring:
+ config:
+  activate:
+   on-profile: dev
+ datasource:
+  driver-class-name: com.mysql.cj.jdbc.Driver
+  url: jdbc:mysql:///NareshITSBMS
+  username: root
+  password: S@kshi12
+  dbcp2:
+   max-total: 100
+   initial-size: 2
+   max-conn-lifetime-millis: 1000
+  type: org.apache.commons.dbcp2.BasicDataSource
+---
+#test, mysql,tomcat-db jdbc DataSoruce,
+spring:
+ config:
+  activate:
+   on-profile: test
+ datasource:
+   driver-class-name: com.mysql.cj.jdbc.Driver
+   url: jdbc:mysql:///NareshITSBMS
+   username: root
+   password: S@kshi12
+   type: org.apache.tomcat.jdbc.pool.DataSource
+---
+#uat, oracle,ucp- PoolDataSourceImpl
+spring:
+ config:
+  activate:
+   on-profile: uat
+ datasource:
+   driver-class-name: oracle.jdbc.driver.OracleDriver
+   url: jdbc:oracle:thin:@localhost:1521:xe
+   username: root
+   password: S@kshi12
+   type: oracle.ucp.jdbc.PoolDataSourceImpl.class
+---
+#prod, oracle,hirakidbcp- by default
+spring:
+ config:
+  activate:
+   on-profile: prod
+ datasource:
+  driver-class-name: oracle.jdbc.driver.OracleDriver
+  url: jdbc:oracle:thin:@localhost:1521:xe
+  username: root
+  password: S@kshi12
