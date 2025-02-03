@@ -1,0 +1,16 @@
+# Conversion to YAML from Properties formar report
+# Warnings:
+# - The yaml file had comments which are lost in the refactoring!
+spring:
+  application:
+    name: springBootStarterProject06-DataInjection-YAML-1
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql:///NareshITSBMS
+    username: root
+    password: S@kshi12
+    dbcp2:
+      max-total: 100
+      initial-size: 2
+      max-conn-lifetime-millis: 1000
+    type: org.apache.commons.dbcp2.BasicDataSource

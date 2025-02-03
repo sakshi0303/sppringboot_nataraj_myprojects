@@ -1,0 +1,58 @@
+emp:
+ info:
+  name: sakshi
+  location: seattle
+  address: m-1592 sectior i
+  salary: 43.4
+  owner: 
+   - Sanjay
+   - ruchi
+  favcolor: 
+   - green
+   - red
+   - blue
+  
+  fav-Color: yellow,white,pink #inline has more precendnece over explicit values
+  phone:  
+   - 3153851203
+   - -7838125076
+   - 7838125076
+  iddetails:
+   voterid: 2350ABC
+   passportno: NH78WE
+   passpotytype: India
+  licencedetails:
+   lid: 44444
+   issueBy: USICS
+   expireationDate: 23-30-1992
+ data:
+  email:  srvsakshi03@gmail.com
+#spring:
+# datasource:
+#  driver-class-name: oracle.jdbc.driver.OracleDriver
+#  url: jdbc:oracle:thin:@localhost:1521:xe
+#  username: root
+#  password: S@kshi12
+#  type: oracle.ucp.jdbc.PoolDataSourceImpl
+c3p0:
+ minsize: 10
+ maxsize: 1000
+my:
+ nt:
+  name: raja
+  id: 1001
+  one:
+   profile: SE
+   exp: 20
+  two:
+   qlfy: Engineer
+cust:
+ info:
+  name: rajesh
+  jd: 3001
+  billAmt: 300 
+spring:
+ config:
+  import: 
+   - classpath:Userdefined.yml
+   - Info1.properties
